@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MonsterXiao's Music Player</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <link rel="stylesheet" href="static/css/font-awesome.css">
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        <div class="bg" style="background: url('static/img/disk-bg.jpg') no-repeat center center/cover;">
+            <div class="main">
+                <div class="player" data-mode="loopOne" data-isplaying="false" data-id="">
+                    <div class="container">
+
+                        <div class="top-icons">
+                            <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-share"></i>
+                        </div>
+
+                        <div class="cover">
+                            <img src="static/img/disk.jpg" alt="Album Cover">
+                        </div>
+
+                        <div class="text">
+                            <h1>未知歌曲</h1>
+                            <h2>未知艺术家</h2>
+                            <h3>当前模式：单曲循环</h3>
+                        </div>
+
+                        <div class="time">
+                            <a href="#">00:00</a>
+                            <a href="#">00:00</a>
+                        </div>
+                        
+                        <div class="seek">
+                            <div class="fillbar">
+                                <div class="handle"></div>
+                            </div>
+                        </div>
+
+                        <!-- <input type="range" id="seek" value="0" min="0" max="100" step="0.5"> -->
+                        <div class="button">
+                            <i class="fa fa-retweet" data-active="false"></i>
+                            <i class="fa fa-backward"></i>
+                            <i class="fa fa-play-circle"></i>
+                            <i class="fa fa-forward"></i>
+                            <i class="fa fa-random" data-active="false"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="song-bar">
+                    <div class="content">
+                        <div class="search-bar">
+                            <input type="text" id="search" placeholder="搜索歌曲">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <ul id='playlist'>
+                            <!-- 动态插入以下歌曲清单 -->
+                            <!-- <li class="song" id="${id}" data-href="${audio}" data-title="${title}" data-artist="${artist}">
+                                <div class="info">
+                                    <div class="thumb-cover">
+                                        <img src="static/img/${title}.jpg" alt="Album Cover">
+                                    </div>
+                                    <div class="titles">
+                                        <a href="#" data-href="${audio}">${id} . ${title}</a>
+                                        <p>${artist}</p>
+                                    </div>
+                                </div>
+                                <div class="status" data-like="false">
+                                    <i class="fa fa-heart-o"></i>
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </li> -->
+                        </ul >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.nodeRequire = require
+            delete window.exports
+            delete window.module
+        </script>
+        <script src="static/lib/jquery.js"></script>
+        <script>
+            console.log('jquery 版本', $.fn.jquery)
+        </script>
+        <script src="static/player.js"></script>
+    </body>
+</html>
