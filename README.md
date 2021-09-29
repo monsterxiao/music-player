@@ -9,7 +9,7 @@ A music player developed by JavaScript / HTML / CSS / Node.js / Electron
 5. The music player windows shows up. Please enjoy.
 
 #### Note
-1. Support mp3 music files only;
+1. Support mp3 music only;
 2. audios file is where to store the music file.
 
 #### Snapshot for the app
