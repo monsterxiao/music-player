@@ -1,5 +1,5 @@
 # Music player
-A music player developed in JavaScript / HTML / CSS / Node.js / Electron
+A music player developed with JavaScript / HTML / CSS / Node.js / Electron
 
 #### How to run the app
 1. Clone or download the code files;
